@@ -1,0 +1,37 @@
+.body__banner{
+    height: 15%;
+    background-color:#444;
+    text-align: center;
+    padding: 5%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card__image{
+    width: 50%;
+    margin-left: 23%;
+    padding-top: 3%;
+}
+.cards__row{
+    text-align: center;
+    margin-top: 5%;
+}
+.card__footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+.wrapper__card{
+    cursor: pointer;
+}
+.result__container{
+    text-align: center;
+}
+.result__textpc{
+    color: #444;
+    padding-top:5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.result__text{
+    padding:2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

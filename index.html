@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <title>Juego Piedra Papel Tijeras</title>
+    </head>
+    <body>
+        <div class = "bg-black body__banner w-100">
+            <h1>Elíge tu arma</h1>
+        </div>
+        <div class="container">
+            <div class="row cards__row">
+                <div class="col-sm-4">
+                    <div class="card wrapper__card piedra__button">
+                        <img src="assets/piedra.png" class="card__image">
+                        <h2 class = "card__footer">Piedra</h2>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card wrapper__card papel__button">
+                        <img src="assets/papel.png" class="card__image">
+                        <h2 class = "card__footer">Papel</h2>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card wrapper__card tijeras__button">
+                        <img src="assets/tijeras.png" class="card__image">
+                        <h2 class = "card__footer">Tijeras</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result__container">
+            <h3 class="result__textpc"></h1>
+            <h3 class="result__text"></h1>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
