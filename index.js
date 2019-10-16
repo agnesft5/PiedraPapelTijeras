@@ -1,4 +1,4 @@
-function letsPlay(string1,string2){
+function letsPlay(event,string1,string2){
     if (string1 === string2){
         return("Ha habido empate!")
     }else if(string1 === "Papel" && string2 === "Piedra"){
@@ -31,13 +31,15 @@ function goBack (){
 let outputContainerPC = document.querySelector(".result__textpc")
 let outputContainer = document.querySelector(".result__text");
 let returnButton = document.querySelector(".result__button");
+let victoriaContainer = document.querySelector(".bi__victoria");
+let derrotaContainer = document.querySelector(".bi__derrota");
 
 //botó pedra
 let piedraButton = document.querySelectorAll(".piedra__button")[0];
 piedraButton.addEventListener("click",()=>{
     let index = Math.round(Math.random()*(array.length-1));
     let string1 = array[index];
-    let playingPiedra = letsPlay(string1,"Piedra")
+    let playingPiedra = letsPlay(event,string1,"Piedra")
     outputContainerPC.innerHTML = `El ordenador ha sacado: ${string1}`
     outputContainer.innerHTML =`${playingPiedra}`
     returnButton.className = ["btn btn-secondary mt-0 mb-10 result__button"];
@@ -50,7 +52,7 @@ let papelButton = document.querySelectorAll(".papel__button")[0];
 papelButton.addEventListener("click",()=>{
     let index = Math.round(Math.random()*(array.length-1));
     let string1 = array[index];
-    let playingPapel = letsPlay(string1,"Papel")
+    let playingPapel = letsPlay(event,string1,"Papel")
     outputContainerPC.innerHTML = `El ordenador ha sacado: ${string1}`
     outputContainer.innerHTML = `${playingPapel}`
     returnButton.className = ["btn btn-secondary mt-0 mb-10 result__button"];
@@ -63,10 +65,30 @@ let tijerasButton = document.querySelectorAll(".tijeras__button")[0];
 tijerasButton.addEventListener("click",()=>{
     let index = Math.round(Math.random()*(array.length-1));
     let string1 = array[index];
-    let playingTijeras= letsPlay(string1,"Tijeras")
+    let playingTijeras= letsPlay(event,string1,"Tijeras")
+    let contadorVictoriasTijeras = contadorVictorias(playingTijeras); //CONTADOR
+    victoriaContainer.value = `${contadorVictoriasTijeras}`//CONTADOR - aqui s'ha de crear el contenidor per l'output (els inputs de dalt a la dreta i fer l'inner.HTML)
+    let contadorDerrotasTijeras = contadorDerrotas(playingTijeras);
+    derrotaContainer.value = `${contadorDerrotasTijeras}`;
     outputContainerPC.innerHTML = `El ordenador ha sacado: ${string1}`
-    outputContainer.innerHTML = `${playingTijeras}`
+    outputContainer.innerHTML = `${playingTijeras}`;
     returnButton.className = ["btn btn-secondary mt-0 mb-10 result__button"];
     returnButton.addEventListener("click",()=>{goBack()
     });
 });
+
+function contadorVictorias(playingWeapon){
+let contadorUsuario = 0;
+    if(playingWeapon === "Has ganado!"){
+        contadorUsuario++;
+    }
+    return contadorUsuario;
+}
+
+function contadorDerrotas(playingWeapon){
+    let contadorPC = 0;
+        if(playingWeapon === "El ordenador gana"){
+            contadorPC++;
+        }
+        return contadorPC;
+    }
