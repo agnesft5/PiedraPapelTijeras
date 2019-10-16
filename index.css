@@ -1,8 +1,8 @@
 .body__banner{
     height: 15%;
-    background-color:#444;
+    background-color:#6c757d;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -22,12 +22,16 @@
 }
 .wrapper__card{
     cursor: pointer;
+    transition: 0.5s;
+}
+.wrapper__card:hover{
+    opacity: 0.4;
 }
 .result__container{
     text-align: center;
 }
 .result__textpc{
-    color: #444;
+    color: #6c757d;
     padding-top:5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
