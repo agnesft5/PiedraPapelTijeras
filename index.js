@@ -40,7 +40,7 @@ piedraButton.addEventListener("click",()=>{
     let playingPiedra = letsPlay(string1,"Piedra")
     outputContainerPC.innerHTML = `El ordenador ha sacado: ${string1}`
     outputContainer.innerHTML =`${playingPiedra}`
-    returnButton.className = ["btn btn-secondary m-3 result__button"];
+    returnButton.className = ["btn btn-secondary mt-0 mb-10 result__button"];
     returnButton.addEventListener("click",()=>{goBack()
     });
 });
@@ -53,7 +53,7 @@ papelButton.addEventListener("click",()=>{
     let playingPapel = letsPlay(string1,"Papel")
     outputContainerPC.innerHTML = `El ordenador ha sacado: ${string1}`
     outputContainer.innerHTML = `${playingPapel}`
-    returnButton.className = ["btn btn-secondary m-3 result__button"];
+    returnButton.className = ["btn btn-secondary mt-0 mb-10 result__button"];
     returnButton.addEventListener("click",()=>{goBack()
     });
 });
@@ -66,7 +66,7 @@ tijerasButton.addEventListener("click",()=>{
     let playingTijeras= letsPlay(string1,"Tijeras")
     outputContainerPC.innerHTML = `El ordenador ha sacado: ${string1}`
     outputContainer.innerHTML = `${playingTijeras}`
-    returnButton.className = ["btn btn-secondary m-3 result__button"];
+    returnButton.className = ["btn btn-secondary mt-0 mb-10 result__button"];
     returnButton.addEventListener("click",()=>{goBack()
     });
 });

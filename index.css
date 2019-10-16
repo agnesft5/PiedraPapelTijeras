@@ -2,7 +2,7 @@
     height: 15%;
     background-color:#6c757d;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -38,4 +38,25 @@
 .result__text{
     padding:2%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.banner__formgroup{
+    display: inline-flex;
+    width:25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.banner__text{
+    margin-top: 2.5%;
+    margin-bottom:2.5%;
+    float: right;
+}
+body > div.bg-black.body__banner.w-100 > div > div > div.col-sm-4 > ul > li:nth-child(1)::before{
+    display: none;
+}
+.banner__input{
+    width: 50%;
+    float: right;
+    margin-right: 20%;
+}
+.form__container{
+    margin:5%;
 }

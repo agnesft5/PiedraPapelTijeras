@@ -13,7 +13,25 @@
     </head>
     <body>
         <div class = "bg-black body__banner w-100">
-            <h1>Elíge tu arma</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h1 class="banner__text">Elíge tu arma</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group float-right banner__formgroup">
+                            <form class="form__container">
+                                <label>Victorias</label>
+                                <input type="text" class="form-control banner__input">
+                            </form>
+                            <form class="form__container">
+                                <label>Derrotas</label>
+                                <input type="text" class="form-control banner__input">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="row cards__row">
@@ -40,7 +58,7 @@
         <div class="result__container">
             <h3 class="result__textpc"></h1>
             <h3 class="result__text"></h1>
-            <button type="button" class="btn btn-secondary m-3 d-none result__button">Volver</button>
+            <button type="button" class="btn btn-secondary mt-0 mb-10 d-none result__button">Volver</button>
         </div>
         <script src="index.js"></script>
     </body>
